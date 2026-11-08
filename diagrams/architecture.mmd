@@ -1,0 +1,37 @@
+flowchart LR
+    subgraph Interface[Owner interface]
+        UI[Today, Recipes and Stock, Market, Purchase Plan, Scenarios, Documents]
+    end
+    subgraph Services[Application services]
+        RV[Document review and validation]
+        LG[Inventory and budget ledger]
+        RE[Recipe requirement calculator]
+        OP[Purchasing optimizer and calendar]
+        EC[Forecast, cost and scenario calculations]
+        AP[Versioned approvals and order states]
+    end
+    subgraph Storage[Private workspace storage]
+        DB[(Bakery records and audit events)]
+        FL[Private source documents]
+    end
+    subgraph Adapters[Explicit adapter boundaries]
+        EX[Demo extraction or optional opted-in provider]
+        PR[Demo prices or configured verified source]
+        OR[Mock order provider - no real transactions]
+    end
+    UI --> RV
+    UI --> OP
+    UI --> EC
+    UI --> AP
+    RV --> EX
+    RV --> FL
+    RV --> LG
+    LG <--> DB
+    RE --> DB
+    OP --> RE
+    OP --> DB
+    OP --> PR
+    EC --> DB
+    AP --> DB
+    AP --> OR
+    AP --> LG

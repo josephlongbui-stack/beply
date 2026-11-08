@@ -1,0 +1,2 @@
+external_id,supplier,purchase_date,ingredient,quantity,unit,line_total_usd,payment_status,received
+demo_flour_receipt_001,Neighborhood Market — Demo,2026-10-24,Bread flour,5000,g,8.00,paid_cash,true

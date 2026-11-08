@@ -1,0 +1,3 @@
+external_id,recipe_name,planned_units,prep_starts_at,ready_for_sale_at,status
+plan_line_1,Bánh mì baguettes — illustrative recipe,300,2026-10-24T20:00:00-07:00,2026-10-25T07:00:00-07:00,planned
+plan_line_2,Butter buns — illustrative recipe,100,2026-10-24T20:00:00-07:00,2026-10-25T07:00:00-07:00,planned

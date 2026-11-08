@@ -1,0 +1,290 @@
+{
+  "fixture_notice": "Fictional demo data; not live prices, tested forecasts, or production recipes.",
+  "required_quantities_base": {
+    "flour": 38000,
+    "butter": 2000,
+    "sugar": 3000,
+    "eggs": 20,
+    "yeast": 720,
+    "milk": 3000
+  },
+  "shortfalls_base": {
+    "flour": 26000,
+    "butter": 1500,
+    "sugar": 2000,
+    "eggs": 8,
+    "yeast": 620,
+    "milk": 2000
+  },
+  "two_store_plan": {
+    "total_cost_cents": 7780,
+    "goods_cost_cents": 6730,
+    "estimated_trip_cost_cents": 1050,
+    "supplier_ids": [
+      "market_a",
+      "warehouse_b"
+    ],
+    "lines": [
+      {
+        "ingredient_id": "flour",
+        "offer_id": "market_a_flour",
+        "supplier_id": "market_a",
+        "packs": 1,
+        "quantity_base": 5000,
+        "line_cost_cents": 800
+      },
+      {
+        "ingredient_id": "flour",
+        "offer_id": "warehouse_b_flour",
+        "supplier_id": "warehouse_b",
+        "packs": 1,
+        "quantity_base": 25000,
+        "line_cost_cents": 2800
+      },
+      {
+        "ingredient_id": "butter",
+        "offer_id": "market_a_butter",
+        "supplier_id": "market_a",
+        "packs": 3,
+        "quantity_base": 1500,
+        "line_cost_cents": 1350
+      },
+      {
+        "ingredient_id": "sugar",
+        "offer_id": "market_a_sugar",
+        "supplier_id": "market_a",
+        "packs": 1,
+        "quantity_base": 2000,
+        "line_cost_cents": 320
+      },
+      {
+        "ingredient_id": "eggs",
+        "offer_id": "market_a_eggs",
+        "supplier_id": "market_a",
+        "packs": 1,
+        "quantity_base": 12,
+        "line_cost_cents": 360
+      },
+      {
+        "ingredient_id": "yeast",
+        "offer_id": "warehouse_b_yeast",
+        "supplier_id": "warehouse_b",
+        "packs": 1,
+        "quantity_base": 1000,
+        "line_cost_cents": 700
+      },
+      {
+        "ingredient_id": "milk",
+        "offer_id": "market_a_milk",
+        "supplier_id": "market_a",
+        "packs": 2,
+        "quantity_base": 2000,
+        "line_cost_cents": 400
+      }
+    ],
+    "status": "feasible"
+  },
+  "one_store_plan": {
+    "total_cost_cents": 9330,
+    "goods_cost_cents": 8980,
+    "estimated_trip_cost_cents": 350,
+    "supplier_ids": [
+      "market_a"
+    ],
+    "lines": [
+      {
+        "ingredient_id": "flour",
+        "offer_id": "market_a_flour",
+        "supplier_id": "market_a",
+        "packs": 6,
+        "quantity_base": 30000,
+        "line_cost_cents": 4800
+      },
+      {
+        "ingredient_id": "butter",
+        "offer_id": "market_a_butter",
+        "supplier_id": "market_a",
+        "packs": 3,
+        "quantity_base": 1500,
+        "line_cost_cents": 1350
+      },
+      {
+        "ingredient_id": "sugar",
+        "offer_id": "market_a_sugar",
+        "supplier_id": "market_a",
+        "packs": 1,
+        "quantity_base": 2000,
+        "line_cost_cents": 320
+      },
+      {
+        "ingredient_id": "eggs",
+        "offer_id": "market_a_eggs",
+        "supplier_id": "market_a",
+        "packs": 1,
+        "quantity_base": 12,
+        "line_cost_cents": 360
+      },
+      {
+        "ingredient_id": "yeast",
+        "offer_id": "market_a_yeast",
+        "supplier_id": "market_a",
+        "packs": 7,
+        "quantity_base": 700,
+        "line_cost_cents": 1750
+      },
+      {
+        "ingredient_id": "milk",
+        "offer_id": "market_a_milk",
+        "supplier_id": "market_a",
+        "packs": 2,
+        "quantity_base": 2000,
+        "line_cost_cents": 400
+      }
+    ],
+    "status": "feasible"
+  },
+  "estimated_savings_vs_one_store_cents": 1550,
+  "tight_budget_case": {
+    "status": "budget_infeasible",
+    "minimum_required_cents": 7780,
+    "shortfall_cents": 280,
+    "reference_plan": {
+      "total_cost_cents": 7780,
+      "goods_cost_cents": 6730,
+      "estimated_trip_cost_cents": 1050,
+      "supplier_ids": [
+        "market_a",
+        "warehouse_b"
+      ],
+      "lines": [
+        {
+          "ingredient_id": "flour",
+          "offer_id": "market_a_flour",
+          "supplier_id": "market_a",
+          "packs": 1,
+          "quantity_base": 5000,
+          "line_cost_cents": 800
+        },
+        {
+          "ingredient_id": "flour",
+          "offer_id": "warehouse_b_flour",
+          "supplier_id": "warehouse_b",
+          "packs": 1,
+          "quantity_base": 25000,
+          "line_cost_cents": 2800
+        },
+        {
+          "ingredient_id": "butter",
+          "offer_id": "market_a_butter",
+          "supplier_id": "market_a",
+          "packs": 3,
+          "quantity_base": 1500,
+          "line_cost_cents": 1350
+        },
+        {
+          "ingredient_id": "sugar",
+          "offer_id": "market_a_sugar",
+          "supplier_id": "market_a",
+          "packs": 1,
+          "quantity_base": 2000,
+          "line_cost_cents": 320
+        },
+        {
+          "ingredient_id": "eggs",
+          "offer_id": "market_a_eggs",
+          "supplier_id": "market_a",
+          "packs": 1,
+          "quantity_base": 12,
+          "line_cost_cents": 360
+        },
+        {
+          "ingredient_id": "yeast",
+          "offer_id": "warehouse_b_yeast",
+          "supplier_id": "warehouse_b",
+          "packs": 1,
+          "quantity_base": 1000,
+          "line_cost_cents": 700
+        },
+        {
+          "ingredient_id": "milk",
+          "offer_id": "market_a_milk",
+          "supplier_id": "market_a",
+          "packs": 2,
+          "quantity_base": 2000,
+          "line_cost_cents": 400
+        }
+      ]
+    }
+  },
+  "after_confirmed_flour_receipt_plan": {
+    "total_cost_cents": 6980,
+    "goods_cost_cents": 5930,
+    "estimated_trip_cost_cents": 1050,
+    "supplier_ids": [
+      "market_a",
+      "warehouse_b"
+    ],
+    "lines": [
+      {
+        "ingredient_id": "flour",
+        "offer_id": "warehouse_b_flour",
+        "supplier_id": "warehouse_b",
+        "packs": 1,
+        "quantity_base": 25000,
+        "line_cost_cents": 2800
+      },
+      {
+        "ingredient_id": "butter",
+        "offer_id": "market_a_butter",
+        "supplier_id": "market_a",
+        "packs": 3,
+        "quantity_base": 1500,
+        "line_cost_cents": 1350
+      },
+      {
+        "ingredient_id": "sugar",
+        "offer_id": "market_a_sugar",
+        "supplier_id": "market_a",
+        "packs": 1,
+        "quantity_base": 2000,
+        "line_cost_cents": 320
+      },
+      {
+        "ingredient_id": "eggs",
+        "offer_id": "market_a_eggs",
+        "supplier_id": "market_a",
+        "packs": 1,
+        "quantity_base": 12,
+        "line_cost_cents": 360
+      },
+      {
+        "ingredient_id": "yeast",
+        "offer_id": "warehouse_b_yeast",
+        "supplier_id": "warehouse_b",
+        "packs": 1,
+        "quantity_base": 1000,
+        "line_cost_cents": 700
+      },
+      {
+        "ingredient_id": "milk",
+        "offer_id": "market_a_milk",
+        "supplier_id": "market_a",
+        "packs": 2,
+        "quantity_base": 2000,
+        "line_cost_cents": 400
+      }
+    ],
+    "status": "feasible"
+  },
+  "after_receipt_actual_spend_cents": 800,
+  "after_receipt_actual_plus_remaining_plan_cents": 7780,
+  "ending_raw_inventory_after_receiving_and_producing_base": {
+    "flour": 4000,
+    "butter": 0,
+    "sugar": 0,
+    "eggs": 4,
+    "yeast": 380,
+    "milk": 0
+  },
+  "validation_status": "All reference assertions passed."
+}

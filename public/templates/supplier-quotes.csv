@@ -1,0 +1,2 @@
+supplier,ingredient,quantity,unit,pack_price_usd,tax_usd,maximum_packs,availability,observed_at,valid_until,source_label
+Your supplier,Your stock item,1,kg,5.00,0.00,20,confirmed,2026-10-24T10:00:00-04:00,2026-10-31T23:00:00-04:00,Supplier quote dated October 24

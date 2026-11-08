@@ -1,0 +1,13 @@
+.data
+.env*
+!.env.example
+work
+outputs
+hosted
+node_modules
+.next
+.git
+playwright-report
+test-results
+coverage
+.DS_Store

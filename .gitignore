@@ -1,0 +1,15 @@
+node_modules/
+.next/
+.data/
+playwright-report/
+test-results/
+coverage/
+*.tsbuildinfo
+.env*
+!.env.example
+work/
+outputs/
+.DS_Store
+.vercel/
+# Earlier Sites checkout has its own Git history; this repository is the Vercel app.
+/hosted/

@@ -1,0 +1,26 @@
+flowchart TD
+    A[Recipe photos, receipt photos, digital files] --> B[Extract or enter draft data]
+    B --> C{Owner review complete?}
+    C -- No --> D[Clarify quantities, units, yield or product match]
+    D --> C
+    C -- Yes --> E[Private bakery records and ingredient ledger]
+    F[Opening counts, production, waste and corrections] --> E
+    G[Local offers, supplier quotes and price history] --> H[Normalize units, source dates and eligibility]
+    E --> I[Calculate ingredient requirements]
+    J[Planned batches and overnight prep deadlines] --> I
+    I --> K[Budget-aware purchasing optimizer]
+    H --> K
+    L[Budget, reserve, store limit and storage rules] --> K
+    K --> M{Feasible plan?}
+    M -- No --> N[Explain shortage or constraint conflict]
+    N --> L
+    M -- Yes --> O[Shopping schedule and explained trade-offs]
+    O --> P[In-store list]
+    O --> Q[Online bulk order draft]
+    O --> R[Cost, purchasing-power and pricing scenarios]
+    P --> S{Owner approves current plan?}
+    Q --> S
+    S -- Yes --> T[Shop or submit simulated order]
+    T --> U[Confirm payment and actual receipt separately]
+    U --> E
+    S -- Revise --> L
