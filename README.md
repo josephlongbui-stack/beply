@@ -24,7 +24,7 @@ Open **http://127.0.0.1:3001/**. Port 3000 belongs to another application on thi
 
 This repository contains the current Vercel/local application. Private credentials, business records, uploads, build outputs and the earlier independent Sites checkout are excluded from Git. Existing installations can run the commands from `npm ci` onward in their current project directory.
 
-The application lives on the `beply` branch. The default `main` branch contains only a starting README and has independent history, with no application code. Check out `beply` before working on this application.
+This is a standalone GitHub repository for beply. Its default application branch is `beply`; its Git history and remote are independent of other projects. Check out this branch before working on the application. Changes pushed here do not modify branches in other repositories.
 
 The local app binds to loopback. It is not a phone-accessible deployment. The hosted version is the cross-device version.
 
