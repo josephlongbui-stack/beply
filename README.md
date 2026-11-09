@@ -11,7 +11,7 @@ The earlier [Sites pilot](https://beply-food-business.pretty-pear-4929.chatgpt.s
 **On this Mac:** Node.js **24.x** and npm are required. No API keys or paid business software are needed.
 
 ```bash
-git clone https://github.com/josephlongbui-stack/beply.git
+git clone --branch beply https://github.com/josephlongbui-stack/beply.git
 cd beply
 npm ci
 npm run seed
@@ -23,6 +23,8 @@ npm run start -- --port 3001
 Open **http://127.0.0.1:3001/**. Port 3000 belongs to another application on this machine. Stop an existing server before restarting on the same port. For development, use `npm run dev -- --port 3001` instead of build/start. Webpack is selected explicitly for this environment.
 
 This repository contains the current Vercel/local application. Private credentials, business records, uploads, build outputs and the earlier independent Sites checkout are excluded from Git. Existing installations can run the commands from `npm ci` onward in their current project directory.
+
+The application lives on the `beply` branch. The default `main` branch contains only a starting README and has independent history, with no application code. Check out `beply` before working on this application.
 
 The local app binds to loopback. It is not a phone-accessible deployment. The hosted version is the cross-device version.
 
